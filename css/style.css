@@ -141,9 +141,7 @@
     .btn-secondary:hover { border-color: var(--ink); background: var(--cream); }
 
     img {
-      max-width: 100%;
-      height: auto;
-      display: block;
+      width: 600px !important;
     }
     /* hero visual */
     .hero-visual { position: relative; z-index: 2; }
