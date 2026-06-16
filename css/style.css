@@ -141,10 +141,44 @@
     .btn-secondary:hover { border-color: var(--ink); background: var(--cream); }
 
     img {
-      width: 600px !important;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-images {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-images img {
+      max-width: 100%;
+      width: 400px;
+      height: auto;
+    }
+    
+    .hero {
+      align-items: center;
+    }
+
+    
+
+    .hero-visual h2 {
+      text-align: center;
     }
     /* hero visual */
-    .hero-visual { position: relative; z-index: 2; }
+    .hero-visual {
+      position: relative;
+      z-index: 2;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      gap: 2rem;
+    }
+
     .hero-card-stack { position: relative; height: 420px; }
     .hcard {
       position: absolute; background: var(--card-bg);
@@ -402,7 +436,7 @@
   }
 
   .hero-visual {
-    order: -1;
+    order: 0;
   }
 
   .hero-card-stack {
