@@ -48,6 +48,10 @@
       <a href="#appel" class="btn-primary">Soutenir l’idée</a>
       <a href="#vision" class="btn-secondary">Comprendre le projet</a>
     </div>
+    <div class="hero-images">
+      <img src="img/local-viethabitat.png" alt="mouton">
+    </div>
+
   </div>
 
 </header>
@@ -262,6 +266,14 @@
     <span>Un projet pour les villes de demain</span>
   </div>
 </footer>
+  <script>
+    const nav = document.querySelector(".nav-links");
+    const btn = document.querySelector(".menu-btn");
+
+    btn.addEventListener("click", () => {
+      nav.classList.toggle("open");
+    });
+  </script>
 
 </body>
 </html>
